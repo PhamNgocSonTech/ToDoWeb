@@ -136,11 +136,10 @@
     <div class="form">
         <form action="${pageContext.request.contextPath}/Login" class="login-form" method="post">
             <p class="para-err-login" style="color: tomato">${err}</p>
-            <input type="text" name="username" placeholder="username" value="${sessionScope.accSession.username}" required/>
-            <input type="password" name="password" placeholder="password" value="${sessionScope.accSession.password}" required/>
+            <input type="text" name="username" value="${usernameCk}" placeholder="username"  required/>
+            <input type="password" name="password" value="${passCk}" placeholder="password"  required/>
             <button type="submit">login</button>
-            <p class="message">Not registered? <a href="${pageContext.request.contextPath}/Register">Create an
-                account</a></p>
+            <p class="message">Not registered? <a href="${pageContext.request.contextPath}/Register">Create an account</a></p>
         </form>
     </div>
 </div>
